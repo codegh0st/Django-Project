@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>from data will be shown here </h2>
+    <hr>
+    <form action="" method="get">
+      <h3>form ko ek sath print krna</h3>
+      <!-- all form field ek sath render kr diya -->
+     {{form}}
+     <hr>
+     <h3>form ko ek ek karke manualy field name ke dwara print karna</h3>
+     <!-- manualy ek ek kr field ko render krana -->
+     {{form.name.label_tag}}
+     {{form.name}}
+
+     {{form.email.label_tag}}
+     {{form.email}}
+
+     {{form.mobile.label_tag}}
+     {{form.mobile}}
+     <hr>
+     <h3>form ko for loop ke dwara print karna </h3>
+      {% for field in form %} <!-- form key hai jo form.py ko rakhe hue hai, ye view fuction se pass hua hai-->
+       {{field.label_tag}}
+       {{field}}
+      {% endfor %}
+      <hr>
+      <h3>Hidden field rahene par two loop chalega like below see commnet</h3>
+      <!-- Ek form me  hi viisble field and hidden field dono rahe to  
+       to two loop chalega ek jo only visible field ko dikhayega
+      aur dusra jo sirf hidden field ko dikhayega. hidden fild users ko nahi
+    dikhata hai us filed ka only soruce code rahega, hidden.label_tag nahi diya hai
+  kyon ki ye users ko label dikha dega, fir hidden rakhne ka koi fayada hi nahi hoga-->
+
+    
+      {% for field in form.visible_fields %}
+       {{field.label_tag}}
+       {{field}}
+      {% endfor %}
+
+      {% for hidden in form.hidden_fields %}
+       {{hidden}}
+      {% endfor %}
+
+    
+
+
+      <input type="button" value="Submit">
+    </form>
+</body>
+</html>

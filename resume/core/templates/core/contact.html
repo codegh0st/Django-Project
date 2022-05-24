@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}
+ <title>Contact Me</title>
+{% endblock title %}
+
+{% block content %}
+ <div class="container conatiner-fluid mt-5">
+    <h1 class="text-warning">Contact Me </h1>
+    <hr>
+     <h4><p class="mt-4 ss-color ">Do you have any other doubts ? please feel free to contact me. thanks you. </p> </h4>
+    <div class="row p-2">
+        <div class="col-sm-9 ss-color">
+            <!-- form starts here -->
+            <form>
+                <div class="row mt-4">
+                  <div class="col-sm">
+                    <p class="pt-3">Your Name:</p> 
+                    <input type="text" class="form-control" placeholder="Your Name">
+                  </div>
+                  <div class="col-sm">
+                    <p class="pt-3">Email Name:</p>
+                    <input type="text" class="form-control" placeholder="Your Email">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-9">
+                    <p class="pt-3">Email Subject:</p>
+                        <input type="text" class="form-control" placeholder="Your Subject">
+                        <p class="pt-3">Email Body:</p> 
+                        <input type="textarea" class="form-control" placeholder="Your Message">
+                    </div>
+
+                </div>
+              </form>
+            <!-- forms ends -->
+        </div>
+        <div class="col-sm-3 text-center ss-color">
+        <!-- lef side bar created below -->
+            <ul class="list-unstyled">
+                <li class="">
+                    <i class="fa-solid fa-location-dot fa-2x i-color"></i>
+                    <p>Gaya, Bihar, PIN-80001</p>
+                </li>
+                <li class="">
+                    <i class="fa-solid fa-phone-volume fa-2x i-color pt-5"></i>
+                    <p>+91-983000001</p>
+                </li>
+                <li class="">
+                    <i class="fa-solid fa-envelope-circle-check fa-2x i-color pt-4"></i>
+                    <p>rajcyberfox@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pt-3">
+    <button class="btn btn-primary" type="button">Send Email</button>
+    </div>
+    <hr>
+    <!-- socila media icon start -->
+    <div class="text-center">
+        <a href="" target="_blank"><i class="fab fa-facebook fa-2x i-color mx-2" aria-hidden="true"></i></a>
+        <a href="" target="_blank"><i class="fab fa-instagram fa-2x i-color mx-2" aria-hidden="true"></i></a>
+        <a href="" target="_blank"><i class="fab fa-twitter fa-2x i-color mx-2" aria-hidden="true"></i></a>
+    </div>
+    <!-- social media icon ends -->
+ </div>
+{% endblock content %}

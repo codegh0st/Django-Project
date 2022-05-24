@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}
+ <title>Skills</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container container-fluid m-5 ss-color ">
+<div class="text-warning">
+ <h1>SKILLS</h1>
+ <hr class="text-warning">
+</div>
+<div class="row text-center p-3 ">
+  <div class="col-sm-5">
+    <h4>HTML/CSS</h4>
+    <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+    </div>
+  </div>
+  <div class="col-sm-5 offset-sm-2">
+    <h4>JavaScript</h4>
+    <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%"
+        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+    </div>
+  </div>
+
+</div>
+<!-- 2nd row starts -->
+<div class="row text-center p-3">
+    <div class="col-sm-5">
+      <h4>Java Programming</h4>
+      <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 50%"
+          aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div>
+    </div>
+    <div class="col-sm-5 offset-sm-2">
+      <h4>Python</h4>
+      <div class="progress">
+          <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%"
+          aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+      </div>
+    </div>
+  
+  </div><div class="row text-center p-3">
+  <div class="col-sm-5">
+    <h4>SQL</h4>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 80%"
+        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+    </div>
+  </div>
+  <div class="col-sm-5 offset-sm-2"> 
+    <h4>Django</h4>
+    <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%"
+        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+    </div>
+  </div>
+
+</div>
+<!-- 2nd row ends -->
+</div>
+
+
+{% endblock content %}

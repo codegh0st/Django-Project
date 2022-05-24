@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h3>this page is run by course.view fuction
+        Our course name is : {{cname}}
+    <hr>
+    img 
+    <img src="{% static 'images/pic1.jpg' %}" alt="bhalu ka pic">
+    <img src="{% get_static_prefix %}images/pic1.jpg" alt="bahlu ka pic">
+    <!-- yahan get static prefix se /static/ folder mil jataha hia above done ka url same hi hoga. -->
+    
+    </h3>
+    <script src="{% static 'js/all.js' %}"> </script>
+    <input type="button" value="JavaScript Test" onclick="disp()">
+</body>
+</html>

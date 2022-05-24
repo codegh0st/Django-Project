@@ -1,0 +1,39 @@
+/* google font used satisfy*/
+.g-font {
+ font-family: 'Satisfy', cursive;
+}
+
+html,body {
+    height: 100%;
+}
+.container-fluid {
+    min-height: 100%;
+}
+
+hr {
+    height: 4px;
+    color: rgb(255, 2, 2);
+}
+
+/* services icon color change */
+.i-color {
+    color:rgb(44, 211, 11)
+}
+.ss-color {
+    color: silver;
+}
+
+a.nav-link {
+    color:silver;
+}
+
+a.nav-link:hover {
+    color: black;
+    background-color: rgb(77, 165, 42);
+}
+
+a.nav-link.active {
+    color: black;
+    background-color: rgb(250, 206, 110);
+    font-weight: bold;
+}

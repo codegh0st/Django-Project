@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+ <div class="img-thumbnail m-4 p-4 bg-dark ss-color">
+   <img src="{% static 'core/images/pic.jpg' %}" height="200px" width="150px" 
+   alt="ProfilePic">
+        <div class="mt-2 text-justify">
+            <h1 class="font-weight-bold g-font pt-2 pl-3">Hi, </h1>
+        </div>
+        <div style="line-height: 2rem;">
+            <p style="text-indent: 60px;"> I am <b class="text-warning">Rahul</b> i am  a python developer
+                having 1year of experience in <b>Python Django Development</b>, Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, odio ullam? Labore officiis hic inventore, temporibus ipsum quis recusandae facilis debitis illum, 
+                asperiores enim at voluptate cupiditate impedit quaerat beatae!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non mollitia ex dolor officia numquam est asperiores, corrupti nulla vero, molestias delectus debitis voluptatum dignissimos veritatis, 
+                    quasi nesciunt recusandae distinctio voluptatibus. Sint voluptate obcaecati, alias accusamus ea cumque laudantium incidunt quisquam delectus qui labore deleniti est pariatur quibusdam, expedita quo? 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime minima ipsum vel facere architecto ut dignissimos maiores, adipisci saepe nulla? Aliquam, natus alias odio impedit ea dolore ratione quo veniam numquam. 
+                    Minima doloremque expedita minus, aliquam earum officiis illum cumque?</p>
+        </div>
+        <div class="text-center p-2">
+            <!-- button Call me, Email me inside this div-->
+            <a href="" class="btn btn-outline-warning">Call Me</a>&nbsp;&nbsp;
+            <a href="" class="btn btn-outline-info">Hire Me</a>
+            </div>
+ </div>
+
+{% endblock content %}

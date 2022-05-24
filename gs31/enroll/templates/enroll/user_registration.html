@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>from data will be shown here </h2>
+    <hr>
+    <form action="" method="get">
+     <table>   
+       <!--form.py form name ke key ke dwara this template me aaya hai views.py me dekho-->
+      
+       <!-- for attribute me dinamicaly id_name dal dega -->
+       <!-- {{from.name}} form.py ke name field ko render karo. e.g. charfield hai name. to txtbox dikhega. -->
+       <h3>exmaple 1</h3>
+       <label for="{{form.name.id_for_label}}">Name:</label>
+       {{form.name}}
+       <label for="{{form.email.id_for_label}}">Email:</label>
+       {{form.email}}
+      <hr>
+      <h3>example 2</h3>
+      <!-- label tag ko bhi dinamic as below kiya ja sakta hai -->
+      {{form.name.label_tag}}
+      {{form.name}} <!--ye form.py me defined input box ko la raha hai --> 
+      <hr>
+      <h3>example 3</h3>
+        <!-- 'form.py' ke 'name' field ke 'label' ko fetch karo ye -->
+     {{form.name.label}}
+     <hr>
+     <h3>exmaple 4</h3>
+     <!-- ye name field ka value fech karta hai, abhi none aayega kyon ki koi bhi 
+    initial value nahi dala gaya hi is field me-->
+     {{form.name.value}}
+     <hr>
+     <h3>exapmle 5</h3>
+     <!-- ye name field ke  name attribute ka value  fech krta hai  -->
+     {{form.name.html_name}}
+     <hr>
+     <h3>exapmle 6</h3>
+     <!-- ye kisi bhi field ke specific attribute ka value fech kr raha hai. 
+    in this case ye 'required' attribute ka value fech kr rha h -->
+     {{form.name.field.required}}
+      
+     </table>
+      <!-- <input type="button" value="Submit"> -->
+    </form>
+</body>
+</html>

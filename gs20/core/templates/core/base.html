@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block tittle %}{% endblock tittle %} </title>
+    <link rel="stylesheet" href="{% static 'core/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    {% block core_css %}
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    {% endblock core_css %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li> <i class="fa-solid fa-skull-crossbones"></i>
+            <li>about</li> <i class="fa-solid fa-dragon" ></i>
+            <li>Django course</li> <i class="fa-brands fa-facebook-square"></i>
+        </ul>
+    </nav>
+    <!-- bootstrap button starts -->
+    <button type="button" class="btn btn-primary">Primary</button> 
+<button type="button" class="btn btn-secondary">Secondary</button>
+<!-- bootstrap button ends -->
+    {% block content %}
+    <h2> Default block nemed content</h2>
+    {% endblock content %}
+    
+    
+    <script src="{% static 'core/js/jquery.js' %}"></script>
+    <script src="{% static 'core/js/popper.js' %}"></script>
+    <script src="{% static 'core/js/all.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.js' %}"></script>
+</body>
+</html>
